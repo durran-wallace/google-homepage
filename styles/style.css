@@ -1,0 +1,31 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navleft {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.navright {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footleft {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footright {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
