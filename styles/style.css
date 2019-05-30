@@ -14,6 +14,7 @@ button {
     display: inline-block;
     border-radius: 5%;
     border: none;
+    margin: 0 5px;
 }
 
 a {
@@ -23,20 +24,48 @@ a {
 
 input {
     display: block;
+    width: 440px;
+    border: none;
+    background: none;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 482px;
     height: 40px;
     margin: 27px auto;
+    border: 1px solid rgb(219, 219, 219);  
+    border-radius: 500px;    
+}
+
+.input:hover {
+    box-shadow: 0 -2px 2px rgb(219, 219, 219),
+                0 3px 2px rgb(219, 219, 219),
+                -2px 0 2px rgb(219, 219, 219),
+                2px 0 2px rgb(219, 219, 219);
+}
+
+.waffle {
+   height: 17px;
+   width: 17px;
+}
+
+.waffle:hover {
+    height: 18.5px;
+    width: 18.5px;
 }
 
 .buttons {
-    text-align: center;
+    text-align: center; 
 }
 
 .sign_in {
     background: #4387fd;
     Color: white;
     font-size: 13px;
-    border-radius: 5%;
+    border-radius: 4%;
     font-weight: bold;
     padding: 6px 11px;
     border: none;
@@ -46,35 +75,33 @@ input {
     display: inline-block;
     position: absolute;
     left: 0;
-   padding-top: 24px;
-   padding-bottom: 24px;
+    height: 100%;
+    line-height: 30px;
+    margin-left: 5px;
 }
 
 .navright {
     display: inline-block;
     position: absolute;
     right: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
+    height: 100%;
+    line-height: 30px;
 }
 
 .footleft {
     display: inline-block;
     position: absolute;
     left: 0;
-    bottom: 0;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    height: 100%;
+    line-height: 40px;
 }
 
 .footright {
     display: inline-block;
     position: absolute;
     right: 0;
-    bottom: 0;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    height: 100%;
+    line-height: 40px;
 }
 
 .footer {
@@ -83,7 +110,8 @@ input {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 12px;
+    font-size: 13px;
+    margin-left: 5px;
 }
 
 .main {
@@ -99,6 +127,51 @@ input {
 
 .navbar {
     width: 100%;
-    height: 60px;
-    font-size: 12px;
+    height: 30px;
+    font-size: 13px;
+    position: absolute;
+    top: 15px;
+}
+
+
+.navleft span {
+    margin-left: 15px;
+}
+
+.navright span, .navright a, .navright button {
+    margin-right: 10px;
+}
+
+.footleft span {
+    margin-left: 20px;
+}
+
+.footright span {
+    margin-right: 20px;
+}
+
+.footleft span a, .footright span a {
+    color: grey;
+}
+
+.navright a img {
+    position: relative;
+    top: 3px;
+}
+
+.navleft span:hover , .navright span:hover {
+    text-decoration: underline;
+}
+
+.footleft span:hover, .footright span:hover {
+    text-decoration: underline;
+}
+
+.buttons button:hover {
+    border: 1px solid rgb(219, 219, 219);
+    color: black;
+}
+
+.sign_in:focus {
+    background: #3874db;
 }
